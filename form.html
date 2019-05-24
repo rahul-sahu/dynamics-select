@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            <p class="formHead">Get a Call</p>
+            <input type="text" name="name" placeholder="Enter your name" required>
+
+            <input type="email" email="email" placeholder="Enter Email" required>
+
+            <input type="tel" placeholder="Mobile Number" required>
+
+
+            <select id="country" name="country" onchange="populate_cur()">
+                <option value="" disabled selected hidden>Country</option>
+                <option value="india">India</option>
+                <option value="me">Middle East</option>
+                <option value="us">United States</option>
+            </select>
+
+            <select id="cur" onchange="populate_grades()">
+                <option value="" disabled selected hidden>Select Curriculum</option>
+            </select>
+
+            <select id="grades" onchange="populate_subjects()">
+                <option value="" disabled selected hidden>Select Grade</option>
+            </select>
+            <select id="subjects">
+                <option value="" disabled selected hidden>Select Subject</option>
+            </select>
+
+            <input type="submit" id="button" value="Request Demo Call">
+        </div>
+    </form>
+    <script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>
